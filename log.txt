@@ -36,4 +36,8 @@
 	Author:	Li Yanfa
 	Action:	Configure UART1 & SD peripheral in devicetree file 
 
+6.	Date:	2017-06-06
+	Author:	Li Yanfa
+	Action:	Configure USB host peripheral in devicetree file 
+
 

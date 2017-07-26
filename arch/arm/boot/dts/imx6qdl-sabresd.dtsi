@@ -998,6 +998,7 @@
 	status = "okay";
 };
 
+/*
 &usbh1 {
 	vbus-supply = <&reg_usb_h1_vbus>;
 	status = "okay";
@@ -1013,6 +1014,7 @@
 	adp-disable;
 	status = "okay";
 };
+*/
 
 &usbphy1 {
 	tx-d-cal = <0x5>;
