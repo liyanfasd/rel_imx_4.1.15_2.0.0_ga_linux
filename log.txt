@@ -32,5 +32,8 @@
 					printk and dmesg options  --->
 						[*] Show timing information on printks
 
+5.	Date:	2017-06-06
+	Author:	Li Yanfa
+	Action:	Configure UART1 & SD peripheral in devicetree file 
 
 
