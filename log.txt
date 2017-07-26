@@ -1,0 +1,36 @@
+1.	Date:	2017-06-06
+	Author:	Li Yanfa
+	Action:	Exclude 'MXC Vivante GPU support' module by way of 
+			make menuconfig
+				Device Drivers  ---> 
+					MXC support drivers  --->
+						MXC Vivante GPU support  --->
+							< > MXC Vivante GPU support
+
+2.	Date:	2017-06-06
+	Author:	Li Yanfa
+	Action:	Exclude 'MAX11801 based touchscreens' module by way of 
+			make menuconfig
+				Device Drivers  ---> 
+					Input device support  --->
+						[*]   Touchscreens  --->
+							< >   MAX11801 based touchscreens
+
+3.	Date:	2017-06-06
+	Author:	Li Yanfa
+	Action:	Exclude 'CAAM Secure Memory / Keystore API (EXPERIMENTAL)' module by way of 
+			make menuconfig
+				-*- Cryptographic API  --->
+					[*]   Hardware crypto devices  --->
+						< >   CAAM Secure Memory / Keystore API (EXPERIMENTAL)
+
+4.	Date:	2017-06-06
+	Author:	Li Yanfa
+	Action:	Include 'Show timing information on printks' module by way of 
+			make menuconfig
+				Kernel hacking  --->
+					printk and dmesg options  --->
+						[*] Show timing information on printks
+
+
+
