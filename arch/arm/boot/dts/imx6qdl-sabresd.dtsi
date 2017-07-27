@@ -144,25 +144,25 @@
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_gpio_keys>;
 
-		power {
-			label = "Power Button";
-			gpios = <&gpio3 29 GPIO_ACTIVE_LOW>;
+		home {
+			label = "Home Button";
+			gpios = <&gpio1 28 GPIO_ACTIVE_LOW>;
 			gpio-key,wakeup;
-			linux,code = <KEY_POWER>;
+			linux,code = <KEY_HOME>;
 		};
 
-		volume-up {
-			label = "Volume Up";
-			gpios = <&gpio1 4 GPIO_ACTIVE_LOW>;
+		enter {
+			label = "Enter Button";
+			gpios = <&gpio4 5 GPIO_ACTIVE_LOW>;
 			gpio-key,wakeup;
-			linux,code = <KEY_VOLUMEUP>;
+			linux,code = <KEY_ENTER>;
 		};
 
-		volume-down {
-			label = "Volume Down";
-			gpios = <&gpio1 5 GPIO_ACTIVE_LOW>;
+		esc {
+			label = "Esc Button";
+			gpios = <&gpio1 30 GPIO_ACTIVE_LOW>;
 			gpio-key,wakeup;
-			linux,code = <KEY_VOLUMEDOWN>;
+			linux,code = <KEY_ESC>;
 		};
 	};
 

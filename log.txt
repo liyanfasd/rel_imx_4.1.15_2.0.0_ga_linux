@@ -40,4 +40,8 @@
 	Author:	Li Yanfa
 	Action:	Configure USB host peripheral in devicetree file 
 
+7.	Date:	2017-07-06
+	Author:	Li Yanfa
+	Action:	Configure gpio-keys in devicetree file
+
 
