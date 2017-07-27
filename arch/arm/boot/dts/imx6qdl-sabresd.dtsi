@@ -51,10 +51,10 @@
 	leds {
 		compatible = "gpio-leds";
 
-		charger-led {
-			gpios = <&gpio1 2 0>;
-			linux,default-trigger = "max8903-charger-charging";
-			retain-state-suspended;
+		led4 {
+			label1 = "led4";
+			gpios = <&gpio3 21 GPIO_ACTIVE_HIGH>;
+			default-state = "off";
 		};
 	};
 
