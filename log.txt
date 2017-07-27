@@ -52,4 +52,12 @@
 	Author:	Li Yanfa
 	Action:	Fix reboot bug when entering reboot/poweroff commands
 
+10.	Date:	2017-07-27
+	Author:	Li Yanfa
+	Action:	Exclude 'Automatically append version information to the version string' module
+			to fix suffix of linux version information problem by way of 
+			make menuconfig
+				General setup  --->
+					[ ] Automatically append version information to the version string
+
 
