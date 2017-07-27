@@ -48,4 +48,8 @@
 	Author:	Li Yanfa
 	Action:	Configure leds in devicetree file
 
+9.	Date:	2017-07-06
+	Author:	Li Yanfa
+	Action:	Fix reboot bug when entering reboot/poweroff commands
+
 
