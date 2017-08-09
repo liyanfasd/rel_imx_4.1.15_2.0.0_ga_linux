@@ -90,3 +90,11 @@
 						< >   Freescale i.MX7 cpufreq support
 						< >   CPU frequency scaling driver for Freescale QorIQ SoCs
 
+13.	Date:	2017-08-09
+	Author:	Li Yanfa
+	Action:	Configure memory split
+		make menuconfig
+			Kernel Features  --->
+				Memory split (3G/1G user/kernel split)  --->
+					(X) 3G/1G user/kernel split 
+
