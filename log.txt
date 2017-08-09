@@ -60,4 +60,11 @@
 				General setup  --->
 					[ ] Automatically append version information to the version string
 
+11.	Date:	2017-08-09
+	Author:	Li Yanfa
+	Action:	Configure Linux to support Fully Preemptible Kernel (RT)
+			make menuconfig
+				Kernel Features  --->
+					Preemption Model (Fully Preemptible Kernel (RT))  --->
+						(X) Fully Preemptible Kernel (RT)
 
