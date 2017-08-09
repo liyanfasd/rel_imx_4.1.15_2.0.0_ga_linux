@@ -68,3 +68,25 @@
 					Preemption Model (Fully Preemptible Kernel (RT))  --->
 						(X) Fully Preemptible Kernel (RT)
 
+12.	Date:	2017-08-09
+	Author:	Li Yanfa
+	Action:	Exclude 'Freescale i.MX6 cpufreq support' module
+			make menuconfig
+				CPU Power Management  --->   
+					CPU Frequency scaling  --->   
+						[*] CPU Frequency scaling
+						<*>   CPU frequency translation statistics
+						[ ]     CPU frequency translation statistics details
+							Default CPUFreq governor (performance)  --->
+						-*-   'performance' governor
+						< >   'powersave' governor
+						< >   'userspace' governor for userspace frequency scaling
+						< >   'ondemand' cpufreq policy governor
+						< >   'interactive' cpufreq policy governor
+						< >   'conservative' cpufreq governor
+							  *** CPU frequency scaling drivers ***
+						< >   Generic DT based cpufreq driver
+						< >   Freescale i.MX6 cpufreq support
+						< >   Freescale i.MX7 cpufreq support
+						< >   CPU frequency scaling driver for Freescale QorIQ SoCs
+
