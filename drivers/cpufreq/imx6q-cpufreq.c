@@ -350,9 +350,9 @@ static int imx6q_cpufreq_probe(struct platform_device *pdev)
 	if (!IS_ERR(vpu_axi_podf))
 		vpu_axi_rate = clk_get_rate(vpu_axi_podf);
 
-	arm_reg = devm_regulator_get_optional(cpu_dev, "arm");
-	pu_reg = devm_regulator_get_optional(cpu_dev, "pu");
-	soc_reg = devm_regulator_get(cpu_dev, "soc");
+	arm_reg = devm_regulator_get_optional(cpu_dev, "vddarm");
+	pu_reg = devm_regulator_get_optional(cpu_dev, "vddpu");
+	soc_reg = devm_regulator_get(cpu_dev, "vddsoc");
 	if (IS_ERR(arm_reg) || IS_ERR(soc_reg)) {
 		dev_err(cpu_dev, "failed to get regulators\n");
 		ret = -ENOENT;

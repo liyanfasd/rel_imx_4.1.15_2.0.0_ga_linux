@@ -98,3 +98,12 @@
 				Memory split (3G/1G user/kernel split)  --->
 					(X) 3G/1G user/kernel split 
 
+14.	Date:	2017-08-10
+	Author:	Li Yanfa
+	Action:	Modify imx6q-cpufreq.c file to access cpu frequence using '/sys/devices/system/cpu/cpuX/cpufreq/',
+			and include 'Freescale i.MX6 cpufreq support' module
+			make menuconfig
+				CPU Power Management  --->   
+					CPU Frequency scaling  --->   
+						<*>   Freescale i.MX6 cpufreq support
+
