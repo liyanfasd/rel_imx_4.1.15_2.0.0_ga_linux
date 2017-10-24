@@ -107,7 +107,7 @@
 					CPU Frequency scaling  --->   
 						<*>   Freescale i.MX6 cpufreq support
 
-14.	Date:	2017-10-24
+15.	Date:	2017-10-24
 	Author:	Li Yanfa
 	Action:	Configure 'Network File Systems' module
 			make menuconfig
@@ -123,4 +123,13 @@
 						<*>   NFS server support
 						[ ]     NFS server support for NFS version 3 
 						[ ]     NFS server support for NFS version 4
+
+16.	Date:	2017-10-24
+	Author:	Li Yanfa
+	Action:	Include 'Davicom DM96xx based USB 10/100 ethernet devices' module
+			make menuconfig
+				Device Drivers  --->
+					[*] Network device support  --->  
+						<*>   USB Network Adapters  --->
+							<*>     Davicom DM96xx based USB 10/100 ethernet devices
 
