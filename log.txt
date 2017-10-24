@@ -133,3 +133,10 @@
 						<*>   USB Network Adapters  --->
 							<*>     Davicom DM96xx based USB 10/100 ethernet devices
 
+17.	Date:	2017-10-24
+	Author:	Li Yanfa
+	Action:	Include 'Philips PCF8563/Epson RTC8564' module
+			make menuconfig
+				Device Drivers  --->
+					[*] Real Time Clock  --->
+						<*>   Philips PCF8563/Epson RTC8564
