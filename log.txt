@@ -107,3 +107,20 @@
 					CPU Frequency scaling  --->   
 						<*>   Freescale i.MX6 cpufreq support
 
+14.	Date:	2017-10-24
+	Author:	Li Yanfa
+	Action:	Configure 'Network File Systems' module
+			make menuconfig
+				File systems  --->   
+					[*] Network File Systems  --->
+						<*>   NFS client support
+						<*>     NFS client support for NFS version 2
+						<*>     NFS client support for NFS version 3
+						[ ]       NFS client support for the NFSv3 ACL protocol extension
+						< >     NFS client support for NFS version 4
+						[ ]     Provide swap over NFS support
+						[ ]   Root file system on NFS
+						<*>   NFS server support
+						[ ]     NFS server support for NFS version 3 
+						[ ]     NFS server support for NFS version 4
+
