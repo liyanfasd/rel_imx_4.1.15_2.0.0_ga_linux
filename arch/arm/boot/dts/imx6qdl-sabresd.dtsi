@@ -242,7 +242,7 @@
 		late_init = <0>;
 		status = "disabled";
 	};
-
+/*
 	lcd@0 {
 		compatible = "fsl,lcd";
 		ipu_id = <0>;
@@ -252,6 +252,7 @@
 		pinctrl-0 = <&pinctrl_ipu1>;
 		status = "okay";
 	};
+*/
 
 	backlight {
 		compatible = "pwm-backlight";
@@ -319,6 +320,19 @@
 		compatible = "st,m25p32";
 		spi-max-frequency = <20000000>;
 		reg = <0>;
+	};
+};
+
+&ecspi3 {
+	fsl,spi-num-chipselects = <1>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_ecspi3>;
+	status = "okay";
+
+	spidev: spidev@0 {
+		spi-max-frequency = <24000000>;
+		reg = <0>;
+		compatible = "step,ioboard";
 	};
 };
 
@@ -666,6 +680,14 @@
 				MX6QDL_PAD_KEY_ROW0__ECSPI1_MOSI	0x100b1
 				MX6QDL_PAD_KEY_COL0__ECSPI1_SCLK	0x100b1
 				MX6QDL_PAD_KEY_ROW1__GPIO4_IO09		0x1b0b0
+			>;
+		};
+
+		pinctrl_ecspi3: ecspi3grp {
+			fsl,pins = <
+				MX6QDL_PAD_DISP0_DAT2__ECSPI3_MISO	0x100b1
+				MX6QDL_PAD_DISP0_DAT1__ECSPI3_MOSI	0x100b1
+				MX6QDL_PAD_DISP0_DAT0__ECSPI3_SCLK	0x100b1
 			>;
 		};
 
