@@ -926,6 +926,13 @@
 				MX6QDL_PAD_GPIO_1__WDOG2_B 0x80000000
 			>;
 		};
+
+		pinctrl_flexcan1: flexcan1grp {
+			fsl,pins = <
+				MX6QDL_PAD_GPIO_7__FLEXCAN1_TX		0x1b0b0
+				MX6QDL_PAD_GPIO_8__FLEXCAN1_RX		0x1b0b0
+			>;
+		};
 	};
 
 	gpio_leds {
@@ -1100,4 +1107,10 @@
 	pinctrl-0 = <&pinctrl_wdog>;
 	fsl,wdog_b;
 	status = "disabled";
+};
+
+&can1 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_flexcan1>;
+	status = "okay";  
 };
